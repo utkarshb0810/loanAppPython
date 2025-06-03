@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Loans</title>
+</head>
+<body>
+    <h1>Loans</h1>
+    <ul>
+        {% for loan in loans %}
+            <li>{{ loan.name }} - {{ loan.amount }}</li>
+        {% endfor %}
+    </ul>
+</body>
+</html>

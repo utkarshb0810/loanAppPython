@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Loan Documents</title>
+</head>
+<body>
+    <h1>Documents for Loan {{ loan.loan_id }}</h1>
+    <ul>
+        {% for document in documents %}
+            <li>{{ document.bank_name }} - {{ document.file_path }} - Analysis: {{ document.analysis }}</li>
+        {% endfor %}
+    </ul>
+
+    <a href="{% url 'upload_document' loan.loan_id %}">Upload Document</a>
+</body>
+</html>
