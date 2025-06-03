@@ -86,9 +86,9 @@ WSGI_APPLICATION = 'loanGuard.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.postgresql',
-        'NAME': 'LoanBoss',
+        'NAME': 'postgres',
         'USER': "postgres",
-        "PASSWORD": "Shivam@2003",
+        "PASSWORD": "12345",
         "HOST": "localhost",
         "PORT": "5432"
     }
